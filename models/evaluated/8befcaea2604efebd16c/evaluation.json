@@ -1,0 +1,194 @@
+{
+  "scope": {
+    "crop": "arecanut",
+    "market": "4",
+    "variety": "rashi",
+    "grade": "local"
+  },
+  "horizon": 7,
+  "raw_observations": 205,
+  "eligible_origins": 146,
+  "status": "evaluated_research_only",
+  "limitations": [
+    "Retrospective snapshot evaluation: original publication/revision times are unknown",
+    "Missing dates are not imputed; closures cannot be inferred from gaps",
+    "Intervals describe mandi reference prices, not buyer realization"
+  ],
+  "inspection": {
+    "first": "2025-11-03",
+    "last": "2026-11-03",
+    "missing_calendar_days": 161,
+    "duplicate_dates": 0,
+    "price_change_over_50pct": 0,
+    "monthly_observation_counts": {
+      "1": 6,
+      "2": 19,
+      "3": 20,
+      "4": 19,
+      "5": 19,
+      "6": 21,
+      "7": 23,
+      "8": 19,
+      "9": 21,
+      "10": 17,
+      "11": 20,
+      "12": 1
+    },
+    "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+  },
+  "candidate": "last",
+  "validation_comparison": {
+    "last": {
+      "n": 17,
+      "mae": 705.2941176470588,
+      "rmse": 855.5513530157373,
+      "wape_pct": 1.3460869174721857,
+      "smape_pct": 1.3504474185214665,
+      "directional_accuracy": 0.0
+    },
+    "mean14": {
+      "n": 17,
+      "mae": 931.9411764705886,
+      "rmse": 1049.8427733425117,
+      "wape_pct": 1.7786534640126646,
+      "smape_pct": 1.7880688408490077,
+      "directional_accuracy": 0.4117647058823529
+    },
+    "ridge": {
+      "n": 17,
+      "mae": 944.7005540975648,
+      "rmse": 1162.0909449467358,
+      "wape_pct": 1.8030053349116568,
+      "smape_pct": 1.8121069281781303,
+      "directional_accuracy": 0.4117647058823529
+    },
+    "hist_gradient_boosting": {
+      "n": 17,
+      "mae": 873.5084132464862,
+      "rmse": 1125.6694369857005,
+      "wape_pct": 1.6671317936063974,
+      "smape_pct": 1.6729857796664658,
+      "directional_accuracy": 0.47058823529411764
+    }
+  },
+  "holdout": {
+    "n": 22,
+    "mae": 1294.1818181818182,
+    "rmse": 1606.344466624312,
+    "wape_pct": 2.7257931721140407,
+    "smape_pct": 2.7104523653146138,
+    "directional_accuracy": 0.0
+  },
+  "holdout_baseline": {
+    "n": 22,
+    "mae": 1294.1818181818182,
+    "rmse": 1606.344466624312,
+    "wape_pct": 2.7257931721140407,
+    "smape_pct": 2.7104523653146138,
+    "directional_accuracy": 0.0
+  },
+  "calibration": {
+    "n": 18,
+    "nominal_level": 0.9,
+    "radius": null,
+    "holdout_coverage": null,
+    "availability": "unavailable_under_30_calibration_samples"
+  },
+  "rolling_origin": [
+    {
+      "n": 15,
+      "mae": 797.5333333333333,
+      "rmse": 1045.9448360214797,
+      "wape_pct": 1.5164883084747396,
+      "smape_pct": 1.5237780166862172,
+      "directional_accuracy": 0.06666666666666667
+    },
+    {
+      "n": 15,
+      "mae": 1347.1333333333334,
+      "rmse": 1802.4710631056835,
+      "wape_pct": 2.609796261018372,
+      "smape_pct": 2.6041641689862987,
+      "directional_accuracy": 0.06666666666666667
+    }
+  ],
+  "partitions": {
+    "train": {
+      "n": 77,
+      "origins": [
+        "2026-02-09",
+        "2026-06-24"
+      ],
+      "targets": [
+        "2026-02-16",
+        "2026-07-01"
+      ]
+    },
+    "validation": {
+      "n": 17,
+      "origins": [
+        "2026-07-02",
+        "2026-07-24"
+      ],
+      "targets": [
+        "2026-07-09",
+        "2026-07-31"
+      ]
+    },
+    "calibration": {
+      "n": 18,
+      "origins": [
+        "2026-08-03",
+        "2026-09-01"
+      ],
+      "targets": [
+        "2026-08-10",
+        "2026-09-08"
+      ]
+    },
+    "holdout": {
+      "n": 22,
+      "origins": [
+        "2026-09-09",
+        "2026-10-23"
+      ],
+      "targets": [
+        "2026-09-16",
+        "2026-10-30"
+      ]
+    }
+  },
+  "version": "8befcaea2604efebd16c",
+  "feature_schema": [
+    "lag_1_obs_inr_per_quintal",
+    "lag_2_obs_inr_per_quintal",
+    "lag_3_obs_inr_per_quintal",
+    "lag_7_obs_inr_per_quintal",
+    "lag_14_obs_inr_per_quintal",
+    "lag_30_obs_inr_per_quintal",
+    "rolling_mean_7_obs_inr_per_quintal",
+    "rolling_median_7_obs_inr_per_quintal",
+    "rolling_std_7_obs_inr_per_quintal",
+    "rolling_mean_14_obs_inr_per_quintal",
+    "rolling_median_14_obs_inr_per_quintal",
+    "rolling_std_14_obs_inr_per_quintal",
+    "rolling_mean_30_obs_inr_per_quintal",
+    "rolling_median_30_obs_inr_per_quintal",
+    "rolling_std_30_obs_inr_per_quintal",
+    "origin_weekday",
+    "origin_month",
+    "target_weekday",
+    "target_month",
+    "days_since_latest_report",
+    "history_30_obs_span_days"
+  ],
+  "source_fingerprint": "d944796fbbd30f97c4d7f0134ed06f9aea0e72340bfb62f4c358bcc3071c7da7",
+  "model_sha256": "9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1",
+  "trained_at": "2026-11-13T09:27:50.401986+00:00",
+  "seed": 42,
+  "python": "3.12.10",
+  "promotion": "not_promoted",
+  "source_hashes": [
+    "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+  ]
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.pkl -text
+*.png -text
+models/** -text -whitespace
+installable-app/public/assets/** -text -whitespace
+docs/source-investigation/resource.html -whitespace

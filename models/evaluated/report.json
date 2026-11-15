@@ -1,0 +1,2943 @@
+[
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "bette",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 196,
+    "eligible_origins": 110,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-04",
+      "last": "2026-11-03",
+      "missing_calendar_days": 169,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 16,
+        "4": 17,
+        "5": 19,
+        "6": 20,
+        "7": 22,
+        "8": 19,
+        "9": 21,
+        "10": 17,
+        "11": 19,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "bette",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 196,
+    "eligible_origins": 75,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-04",
+      "last": "2026-11-03",
+      "missing_calendar_days": 169,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 16,
+        "4": 17,
+        "5": 19,
+        "6": 20,
+        "7": 22,
+        "8": 19,
+        "9": 21,
+        "10": 17,
+        "11": 19,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "bette",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 196,
+    "eligible_origins": 134,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-04",
+      "last": "2026-11-03",
+      "missing_calendar_days": 169,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 16,
+        "4": 17,
+        "5": 19,
+        "6": 20,
+        "7": 22,
+        "8": 19,
+        "9": 21,
+        "10": 17,
+        "11": 19,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "hist_gradient_boosting",
+    "validation_comparison": {
+      "last": {
+        "n": 16,
+        "mae": 2260.5625,
+        "rmse": 2913.028589372236,
+        "wape_pct": 3.7362855315909247,
+        "smape_pct": 3.7813717293116085,
+        "directional_accuracy": 0.0
+      },
+      "mean14": {
+        "n": 16,
+        "mae": 2078.3348214285716,
+        "rmse": 2651.675893649474,
+        "wape_pct": 3.4350973808975334,
+        "smape_pct": 3.472475069380332,
+        "directional_accuracy": 0.875
+      },
+      "ridge": {
+        "n": 16,
+        "mae": 1882.5893111229684,
+        "rmse": 2348.72700957025,
+        "wape_pct": 3.111566791485072,
+        "smape_pct": 3.141016989039807,
+        "directional_accuracy": 0.875
+      },
+      "hist_gradient_boosting": {
+        "n": 16,
+        "mae": 1490.501307803862,
+        "rmse": 1707.3257380561995,
+        "wape_pct": 2.4635189122906005,
+        "smape_pct": 2.477032560405906,
+        "directional_accuracy": 0.8125
+      }
+    },
+    "holdout": {
+      "n": 21,
+      "mae": 3711.408057090437,
+      "rmse": 4280.7891967910455,
+      "wape_pct": 6.626477591847804,
+      "smape_pct": 6.488190723993896,
+      "directional_accuracy": 0.5238095238095238
+    },
+    "holdout_baseline": {
+      "n": 21,
+      "mae": 2355.5238095238096,
+      "rmse": 3420.4216810490598,
+      "wape_pct": 4.205634492562388,
+      "smape_pct": 4.256892242121762,
+      "directional_accuracy": 0.0
+    },
+    "calibration": {
+      "n": 16,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 1910.5897435897443,
+        "rmse": 2636.6265861449947,
+        "wape_pct": 3.126135386293555,
+        "smape_pct": 3.146135778869244,
+        "directional_accuracy": 0.6666666666666666
+      },
+      {
+        "n": 14,
+        "mae": 3160.7999953983262,
+        "rmse": 4446.656616742423,
+        "wape_pct": 5.305339476838962,
+        "smape_pct": 5.319559055530813,
+        "directional_accuracy": 0.42857142857142855
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 69,
+        "origins": [
+          "2026-02-09",
+          "2026-06-30"
+        ],
+        "targets": [
+          "2026-02-16",
+          "2026-07-07"
+        ]
+      },
+      "validation": {
+        "n": 16,
+        "origins": [
+          "2026-07-09",
+          "2026-07-30"
+        ],
+        "targets": [
+          "2026-07-16",
+          "2026-08-06"
+        ]
+      },
+      "calibration": {
+        "n": 16,
+        "origins": [
+          "2026-08-07",
+          "2026-09-02"
+        ],
+        "targets": [
+          "2026-08-14",
+          "2026-09-09"
+        ]
+      },
+      "holdout": {
+        "n": 21,
+        "origins": [
+          "2026-09-10",
+          "2026-10-23"
+        ],
+        "targets": [
+          "2026-09-17",
+          "2026-10-30"
+        ]
+      }
+    },
+    "version": "a4e29ec88ad096682cb4",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "6e4748993eb0d51ab315647d4812aade0702ee5533612a27e9456248b98ae581",
+    "model_sha256": "66863f0491b00c130977d474bc48ff9774a81a9b43efa15e891ae4ff8b598f2f",
+    "trained_at": "2026-11-13T09:26:36.105422+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "gorabalu",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 202,
+    "eligible_origins": 115,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 164,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 19,
+        "4": 18,
+        "5": 19,
+        "6": 21,
+        "7": 23,
+        "8": 18,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "gorabalu",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 202,
+    "eligible_origins": 80,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 164,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 19,
+        "4": 18,
+        "5": 19,
+        "6": 21,
+        "7": 23,
+        "8": 18,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "gorabalu",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 202,
+    "eligible_origins": 138,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 164,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 19,
+        "4": 18,
+        "5": 19,
+        "6": 21,
+        "7": 23,
+        "8": 18,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "ridge",
+    "validation_comparison": {
+      "last": {
+        "n": 16,
+        "mae": 1309.75,
+        "rmse": 2048.49032826616,
+        "wape_pct": 3.262614295033372,
+        "smape_pct": 3.3559363826790762,
+        "directional_accuracy": 0.0
+      },
+      "mean14": {
+        "n": 16,
+        "mae": 1211.8125,
+        "rmse": 1518.947075061121,
+        "wape_pct": 3.018649960221514,
+        "smape_pct": 3.0628374329077213,
+        "directional_accuracy": 0.375
+      },
+      "ridge": {
+        "n": 16,
+        "mae": 1005.334957700753,
+        "rmse": 1322.8532793265254,
+        "wape_pct": 2.5043101387984326,
+        "smape_pct": 2.549443219146939,
+        "directional_accuracy": 0.625
+      },
+      "hist_gradient_boosting": {
+        "n": 16,
+        "mae": 1628.0308747547947,
+        "rmse": 1872.4417316790073,
+        "wape_pct": 4.055458526230714,
+        "smape_pct": 4.123350424875471,
+        "directional_accuracy": 0.3125
+      }
+    },
+    "holdout": {
+      "n": 21,
+      "mae": 4100.6634704201315,
+      "rmse": 5614.43114557091,
+      "wape_pct": 11.379638220256544,
+      "smape_pct": 10.411610452945357,
+      "directional_accuracy": 0.42857142857142855
+    },
+    "holdout_baseline": {
+      "n": 21,
+      "mae": 1225.6666666666667,
+      "rmse": 1494.260145005675,
+      "wape_pct": 3.4013137985852415,
+      "smape_pct": 3.404755697432567,
+      "directional_accuracy": 0.0
+    },
+    "calibration": {
+      "n": 17,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 2118.188996451034,
+        "rmse": 2528.498905165845,
+        "wape_pct": 5.343321939092156,
+        "smape_pct": 5.164596059896735,
+        "directional_accuracy": 0.4666666666666667
+      },
+      {
+        "n": 15,
+        "mae": 1994.1005981997466,
+        "rmse": 2195.686313165623,
+        "wape_pct": 5.002284273450465,
+        "smape_pct": 5.12974401668502,
+        "directional_accuracy": 0.4666666666666667
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 72,
+        "origins": [
+          "2026-02-09",
+          "2026-06-22"
+        ],
+        "targets": [
+          "2026-02-16",
+          "2026-06-29"
+        ]
+      },
+      "validation": {
+        "n": 16,
+        "origins": [
+          "2026-06-30",
+          "2026-07-21"
+        ],
+        "targets": [
+          "2026-07-07",
+          "2026-07-28"
+        ]
+      },
+      "calibration": {
+        "n": 17,
+        "origins": [
+          "2026-07-29",
+          "2026-09-02"
+        ],
+        "targets": [
+          "2026-08-05",
+          "2026-09-09"
+        ]
+      },
+      "holdout": {
+        "n": 21,
+        "origins": [
+          "2026-09-10",
+          "2026-10-23"
+        ],
+        "targets": [
+          "2026-09-17",
+          "2026-10-30"
+        ]
+      }
+    },
+    "version": "1363322bf4bbcb59bf94",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "c22e0d41d5dce7c782b3ba10a59ec806be341875cf563b4b294e0b92335af805",
+    "model_sha256": "3f79883d8462096a7200935f8b37001757bcf6287c58eb0e9dbd45d7f7737e53",
+    "trained_at": "2026-11-13T09:26:36.541928+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "gorabalu",
+      "grade": "medium"
+    },
+    "horizon": 1,
+    "raw_observations": 2,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-25",
+      "last": "2026-08-27",
+      "missing_calendar_days": 1,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "8": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "gorabalu",
+      "grade": "medium"
+    },
+    "horizon": 3,
+    "raw_observations": 2,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-25",
+      "last": "2026-08-27",
+      "missing_calendar_days": 1,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "8": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "gorabalu",
+      "grade": "medium"
+    },
+    "horizon": 7,
+    "raw_observations": 2,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-25",
+      "last": "2026-08-27",
+      "missing_calendar_days": 1,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "8": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "new variety",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 55,
+    "eligible_origins": 14,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 311,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "9": 17,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "new variety",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 55,
+    "eligible_origins": 8,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 311,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "9": 17,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "new variety",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 55,
+    "eligible_origins": 15,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 311,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "9": 17,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "other",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 198,
+    "eligible_origins": 113,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-01-21",
+      "last": "2026-11-03",
+      "missing_calendar_days": 89,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 64,
+      "monthly_observation_counts": {
+        "1": 5,
+        "2": 19,
+        "3": 24,
+        "4": 21,
+        "5": 20,
+        "6": 22,
+        "7": 23,
+        "8": 22,
+        "9": 21,
+        "10": 20,
+        "11": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "other",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 198,
+    "eligible_origins": 110,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-01-21",
+      "last": "2026-11-03",
+      "missing_calendar_days": 89,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 64,
+      "monthly_observation_counts": {
+        "1": 5,
+        "2": 19,
+        "3": 24,
+        "4": 21,
+        "5": 20,
+        "6": 22,
+        "7": 23,
+        "8": 22,
+        "9": 21,
+        "10": 20,
+        "11": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "other",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 198,
+    "eligible_origins": 120,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-01-21",
+      "last": "2026-11-03",
+      "missing_calendar_days": 89,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 64,
+      "monthly_observation_counts": {
+        "1": 5,
+        "2": 19,
+        "3": 24,
+        "4": 21,
+        "5": 20,
+        "6": 22,
+        "7": 23,
+        "8": 22,
+        "9": 21,
+        "10": 20,
+        "11": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "ridge",
+    "validation_comparison": {
+      "last": {
+        "n": 15,
+        "mae": 10671.8,
+        "rmse": 13624.725340350902,
+        "wape_pct": 30.764514827128938,
+        "smape_pct": 32.546051258123555,
+        "directional_accuracy": 0.0
+      },
+      "mean14": {
+        "n": 15,
+        "mae": 8006.542857142858,
+        "rmse": 9867.92109956352,
+        "wape_pct": 23.081149051014332,
+        "smape_pct": 22.729456320895174,
+        "directional_accuracy": 0.6666666666666666
+      },
+      "ridge": {
+        "n": 15,
+        "mae": 7944.912251693116,
+        "rmse": 10041.715264748349,
+        "wape_pct": 22.903481209116663,
+        "smape_pct": 22.61643850040358,
+        "directional_accuracy": 0.6
+      },
+      "hist_gradient_boosting": {
+        "n": 15,
+        "mae": 8809.963619057458,
+        "rmse": 10242.89396797256,
+        "wape_pct": 25.397239114765988,
+        "smape_pct": 24.89686822406865,
+        "directional_accuracy": 0.6666666666666666
+      }
+    },
+    "holdout": {
+      "n": 18,
+      "mae": 9498.90919368044,
+      "rmse": 10640.679839486462,
+      "wape_pct": 27.714171751355543,
+      "smape_pct": 25.393534758976028,
+      "directional_accuracy": 0.4444444444444444
+    },
+    "holdout_baseline": {
+      "n": 18,
+      "mae": 7693.944444444444,
+      "rmse": 9732.902322077989,
+      "wape_pct": 22.447977281494857,
+      "smape_pct": 22.744286816149742,
+      "directional_accuracy": 0.0
+    },
+    "calibration": {
+      "n": 15,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 17339.71865645293,
+        "rmse": 20306.452455147533,
+        "wape_pct": 45.53664960490388,
+        "smape_pct": 51.24085211551815,
+        "directional_accuracy": 0.8
+      },
+      {
+        "n": 13,
+        "mae": 18252.639784812134,
+        "rmse": 22023.25838652621,
+        "wape_pct": 53.165093163264984,
+        "smape_pct": 50.65478872302963,
+        "directional_accuracy": 0.6153846153846154
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 62,
+        "origins": [
+          "2026-03-09",
+          "2026-07-07"
+        ],
+        "targets": [
+          "2026-03-16",
+          "2026-07-14"
+        ]
+      },
+      "validation": {
+        "n": 15,
+        "origins": [
+          "2026-07-15",
+          "2026-08-03"
+        ],
+        "targets": [
+          "2026-07-22",
+          "2026-08-10"
+        ]
+      },
+      "calibration": {
+        "n": 15,
+        "origins": [
+          "2026-08-11",
+          "2026-09-10"
+        ],
+        "targets": [
+          "2026-08-18",
+          "2026-09-17"
+        ]
+      },
+      "holdout": {
+        "n": 18,
+        "origins": [
+          "2026-09-18",
+          "2026-10-23"
+        ],
+        "targets": [
+          "2026-09-25",
+          "2026-10-30"
+        ]
+      }
+    },
+    "version": "013322a7faeaaa157880",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "9ef4a7a1641d41a9d31a4179162afe7b969e908048543aba526d88c753aecbc5",
+    "model_sha256": "e8a83f2e36a403ec0e56e5305a8447d5a55746497ca8e5b8fcaabb2c002b6451",
+    "trained_at": "2026-11-13T09:26:37.021684+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "rashi",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 205,
+    "eligible_origins": 119,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 161,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 20,
+        "4": 19,
+        "5": 19,
+        "6": 21,
+        "7": 23,
+        "8": 19,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "rashi",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 205,
+    "eligible_origins": 83,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 161,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 20,
+        "4": 19,
+        "5": 19,
+        "6": 21,
+        "7": 23,
+        "8": 19,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "rashi",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 205,
+    "eligible_origins": 146,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 161,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 20,
+        "4": 19,
+        "5": 19,
+        "6": 21,
+        "7": 23,
+        "8": 19,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "last",
+    "validation_comparison": {
+      "last": {
+        "n": 17,
+        "mae": 705.2941176470588,
+        "rmse": 855.5513530157373,
+        "wape_pct": 1.3460869174721857,
+        "smape_pct": 1.3504474185214665,
+        "directional_accuracy": 0.0
+      },
+      "mean14": {
+        "n": 17,
+        "mae": 931.9411764705886,
+        "rmse": 1049.8427733425117,
+        "wape_pct": 1.7786534640126646,
+        "smape_pct": 1.7880688408490077,
+        "directional_accuracy": 0.4117647058823529
+      },
+      "ridge": {
+        "n": 17,
+        "mae": 944.7005540975648,
+        "rmse": 1162.0909449467358,
+        "wape_pct": 1.8030053349116568,
+        "smape_pct": 1.8121069281781303,
+        "directional_accuracy": 0.4117647058823529
+      },
+      "hist_gradient_boosting": {
+        "n": 17,
+        "mae": 873.5084132464862,
+        "rmse": 1125.6694369857005,
+        "wape_pct": 1.6671317936063974,
+        "smape_pct": 1.6729857796664658,
+        "directional_accuracy": 0.47058823529411764
+      }
+    },
+    "holdout": {
+      "n": 22,
+      "mae": 1294.1818181818182,
+      "rmse": 1606.344466624312,
+      "wape_pct": 2.7257931721140407,
+      "smape_pct": 2.7104523653146138,
+      "directional_accuracy": 0.0
+    },
+    "holdout_baseline": {
+      "n": 22,
+      "mae": 1294.1818181818182,
+      "rmse": 1606.344466624312,
+      "wape_pct": 2.7257931721140407,
+      "smape_pct": 2.7104523653146138,
+      "directional_accuracy": 0.0
+    },
+    "calibration": {
+      "n": 18,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 797.5333333333333,
+        "rmse": 1045.9448360214797,
+        "wape_pct": 1.5164883084747396,
+        "smape_pct": 1.5237780166862172,
+        "directional_accuracy": 0.06666666666666667
+      },
+      {
+        "n": 15,
+        "mae": 1347.1333333333334,
+        "rmse": 1802.4710631056835,
+        "wape_pct": 2.609796261018372,
+        "smape_pct": 2.6041641689862987,
+        "directional_accuracy": 0.06666666666666667
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 77,
+        "origins": [
+          "2026-02-09",
+          "2026-06-24"
+        ],
+        "targets": [
+          "2026-02-16",
+          "2026-07-01"
+        ]
+      },
+      "validation": {
+        "n": 17,
+        "origins": [
+          "2026-07-02",
+          "2026-07-24"
+        ],
+        "targets": [
+          "2026-07-09",
+          "2026-07-31"
+        ]
+      },
+      "calibration": {
+        "n": 18,
+        "origins": [
+          "2026-08-03",
+          "2026-09-01"
+        ],
+        "targets": [
+          "2026-08-10",
+          "2026-09-08"
+        ]
+      },
+      "holdout": {
+        "n": 22,
+        "origins": [
+          "2026-09-09",
+          "2026-10-23"
+        ],
+        "targets": [
+          "2026-09-16",
+          "2026-10-30"
+        ]
+      }
+    },
+    "version": "8befcaea2604efebd16c",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "d944796fbbd30f97c4d7f0134ed06f9aea0e72340bfb62f4c358bcc3071c7da7",
+    "model_sha256": "9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1",
+    "trained_at": "2026-11-13T09:26:37.421796+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "saraku",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 195,
+    "eligible_origins": 108,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 171,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 18,
+        "3": 15,
+        "4": 17,
+        "5": 19,
+        "6": 20,
+        "7": 23,
+        "8": 18,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "saraku",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 195,
+    "eligible_origins": 75,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 171,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 18,
+        "3": 15,
+        "4": 17,
+        "5": 19,
+        "6": 20,
+        "7": 23,
+        "8": 18,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "saraku",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 195,
+    "eligible_origins": 129,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-03",
+      "last": "2026-11-03",
+      "missing_calendar_days": 171,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 6,
+        "2": 18,
+        "3": 15,
+        "4": 17,
+        "5": 19,
+        "6": 20,
+        "7": 23,
+        "8": 18,
+        "9": 21,
+        "10": 17,
+        "11": 20,
+        "12": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "hist_gradient_boosting",
+    "validation_comparison": {
+      "last": {
+        "n": 16,
+        "mae": 7871.0625,
+        "rmse": 9483.899273901005,
+        "wape_pct": 9.895277591384602,
+        "smape_pct": 9.9545569521671,
+        "directional_accuracy": 0.0
+      },
+      "mean14": {
+        "n": 16,
+        "mae": 5510.276785714285,
+        "rmse": 6836.18305000969,
+        "wape_pct": 6.927364431422738,
+        "smape_pct": 6.969487696808439,
+        "directional_accuracy": 0.8125
+      },
+      "ridge": {
+        "n": 16,
+        "mae": 7578.916453008197,
+        "rmse": 8696.148168265847,
+        "wape_pct": 9.527999827777771,
+        "smape_pct": 9.73931210472859,
+        "directional_accuracy": 0.6875
+      },
+      "hist_gradient_boosting": {
+        "n": 16,
+        "mae": 5414.953316333714,
+        "rmse": 6448.41151080993,
+        "wape_pct": 6.807526456499454,
+        "smape_pct": 6.851090823630198,
+        "directional_accuracy": 0.8125
+      }
+    },
+    "holdout": {
+      "n": 20,
+      "mae": 5869.912551461936,
+      "rmse": 8470.00439769848,
+      "wape_pct": 7.647671042921971,
+      "smape_pct": 7.8823508242928595,
+      "directional_accuracy": 0.85
+    },
+    "holdout_baseline": {
+      "n": 20,
+      "mae": 10382.65,
+      "rmse": 13140.257236827596,
+      "wape_pct": 13.527133676636799,
+      "smape_pct": 14.171064105044806,
+      "directional_accuracy": 0.0
+    },
+    "calibration": {
+      "n": 15,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 8643.376576576575,
+        "rmse": 10920.759263729022,
+        "wape_pct": 10.92270476061145,
+        "smape_pct": 10.92314660642811,
+        "directional_accuracy": 0.6666666666666666
+      },
+      {
+        "n": 13,
+        "mae": 9342.175588509182,
+        "rmse": 11380.713099114548,
+        "wape_pct": 11.949384138099187,
+        "smape_pct": 11.727478776763503,
+        "directional_accuracy": 0.7692307692307693
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 65,
+        "origins": [
+          "2026-02-09",
+          "2026-07-01"
+        ],
+        "targets": [
+          "2026-02-16",
+          "2026-07-08"
+        ]
+      },
+      "validation": {
+        "n": 16,
+        "origins": [
+          "2026-07-09",
+          "2026-07-30"
+        ],
+        "targets": [
+          "2026-07-16",
+          "2026-08-06"
+        ]
+      },
+      "calibration": {
+        "n": 15,
+        "origins": [
+          "2026-08-07",
+          "2026-09-03"
+        ],
+        "targets": [
+          "2026-08-14",
+          "2026-09-10"
+        ]
+      },
+      "holdout": {
+        "n": 20,
+        "origins": [
+          "2026-09-11",
+          "2026-10-23"
+        ],
+        "targets": [
+          "2026-09-18",
+          "2026-10-30"
+        ]
+      }
+    },
+    "version": "60ce85a34383779effa5",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "11cb903c4339a8a52f2bea1fd52dfb18a4ed8d873b059684d1c00216f710f9f4",
+    "model_sha256": "28f3c04d1c84e168f1cef3e0de31b186d2972d405b9d897595e09978b17302c0",
+    "trained_at": "2026-11-13T09:26:38.042848+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "saraku",
+      "grade": "medium"
+    },
+    "horizon": 1,
+    "raw_observations": 1,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-27",
+      "last": "2026-08-27",
+      "missing_calendar_days": 0,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "8": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "saraku",
+      "grade": "medium"
+    },
+    "horizon": 3,
+    "raw_observations": 1,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-27",
+      "last": "2026-08-27",
+      "missing_calendar_days": 0,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "8": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "saraku",
+      "grade": "medium"
+    },
+    "horizon": 7,
+    "raw_observations": 1,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-27",
+      "last": "2026-08-27",
+      "missing_calendar_days": 0,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "8": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "sippegotu",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 128,
+    "eligible_origins": 44,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-01-22",
+      "last": "2026-11-03",
+      "missing_calendar_days": 158,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 4,
+        "2": 16,
+        "3": 12,
+        "4": 22,
+        "5": 15,
+        "6": 12,
+        "7": 15,
+        "8": 7,
+        "9": 10,
+        "10": 14,
+        "11": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "sippegotu",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 128,
+    "eligible_origins": 39,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-01-22",
+      "last": "2026-11-03",
+      "missing_calendar_days": 158,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 4,
+        "2": 16,
+        "3": 12,
+        "4": 22,
+        "5": 15,
+        "6": 12,
+        "7": 15,
+        "8": 7,
+        "9": 10,
+        "10": 14,
+        "11": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "arecanut",
+      "market": "4",
+      "variety": "sippegotu",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 128,
+    "eligible_origins": 41,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-01-22",
+      "last": "2026-11-03",
+      "missing_calendar_days": 158,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 4,
+        "2": 16,
+        "3": 12,
+        "4": 22,
+        "5": 15,
+        "6": 12,
+        "7": 15,
+        "8": 7,
+        "9": 10,
+        "10": 14,
+        "11": 1
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "e1fbbc7716a6c242dcc0f987aafd84af44fdf11653befd50a1d0700c6f7f7d99"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "copra",
+      "market": "5",
+      "variety": "copra",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 76,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-12-11",
+      "last": "2026-11-02",
+      "missing_calendar_days": 251,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 9,
+        "7": 9,
+        "8": 7,
+        "9": 7,
+        "10": 9,
+        "11": 1,
+        "12": 5
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "copra",
+      "market": "5",
+      "variety": "copra",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 76,
+    "eligible_origins": 0,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-12-11",
+      "last": "2026-11-02",
+      "missing_calendar_days": 251,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 9,
+        "7": 9,
+        "8": 7,
+        "9": 7,
+        "10": 9,
+        "11": 1,
+        "12": 5
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "copra",
+      "market": "5",
+      "variety": "copra",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 76,
+    "eligible_origins": 18,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-12-11",
+      "last": "2026-11-02",
+      "missing_calendar_days": 251,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 9,
+        "7": 9,
+        "8": 7,
+        "9": 7,
+        "10": 9,
+        "11": 1,
+        "12": 5
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "copra",
+      "market": "5",
+      "variety": "other",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 223,
+    "eligible_origins": 155,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-01",
+      "last": "2026-11-03",
+      "missing_calendar_days": 145,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 2,
+      "monthly_observation_counts": {
+        "1": 2,
+        "2": 13,
+        "3": 25,
+        "4": 26,
+        "5": 25,
+        "6": 26,
+        "7": 27,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 4
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "hist_gradient_boosting",
+    "validation_comparison": {
+      "last": {
+        "n": 23,
+        "mae": 1652.1739130434783,
+        "rmse": 2279.3973269074972,
+        "wape_pct": 8.745684695051784,
+        "smape_pct": 8.57816707884104,
+        "directional_accuracy": 0.17391304347826086
+      },
+      "mean14": {
+        "n": 23,
+        "mae": 1015.8385093167701,
+        "rmse": 1620.5787577912038,
+        "wape_pct": 5.3772809469012,
+        "smape_pct": 5.205137242434785,
+        "directional_accuracy": 0.6956521739130435
+      },
+      "ridge": {
+        "n": 23,
+        "mae": 1020.3283575845865,
+        "rmse": 1678.3366902819002,
+        "wape_pct": 5.401047692622667,
+        "smape_pct": 5.243400342100493,
+        "directional_accuracy": 0.6521739130434783
+      },
+      "hist_gradient_boosting": {
+        "n": 23,
+        "mae": 982.3484163796991,
+        "rmse": 1609.6725043851038,
+        "wape_pct": 5.20000312467965,
+        "smape_pct": 5.033609766595288,
+        "directional_accuracy": 0.6956521739130435
+      }
+    },
+    "holdout": {
+      "n": 24,
+      "mae": 1264.1412210596877,
+      "rmse": 1380.531525966056,
+      "wape_pct": 7.091956359381137,
+      "smape_pct": 6.918261624589807,
+      "directional_accuracy": 0.4583333333333333
+    },
+    "holdout_baseline": {
+      "n": 24,
+      "mae": 995.8333333333334,
+      "rmse": 1468.1337359609533,
+      "wape_pct": 5.586722767648434,
+      "smape_pct": 5.464496399397521,
+      "directional_accuracy": 0.20833333333333334
+    },
+    "calibration": {
+      "n": 22,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 1627.5582444523975,
+        "rmse": 2045.315036288346,
+        "wape_pct": 8.998663349349783,
+        "smape_pct": 9.004430308326254,
+        "directional_accuracy": 0.6666666666666666
+      },
+      {
+        "n": 15,
+        "mae": 1042.2949401248172,
+        "rmse": 1289.562426283564,
+        "wape_pct": 5.581729418733402,
+        "smape_pct": 5.492419367848394,
+        "directional_accuracy": 0.8
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 85,
+        "origins": [
+          "2026-03-17",
+          "2026-07-17"
+        ],
+        "targets": [
+          "2026-03-18",
+          "2026-07-18"
+        ]
+      },
+      "validation": {
+        "n": 23,
+        "origins": [
+          "2026-07-20",
+          "2026-08-21"
+        ],
+        "targets": [
+          "2026-07-21",
+          "2026-08-22"
+        ]
+      },
+      "calibration": {
+        "n": 22,
+        "origins": [
+          "2026-08-24",
+          "2026-09-23"
+        ],
+        "targets": [
+          "2026-08-25",
+          "2026-09-24"
+        ]
+      },
+      "holdout": {
+        "n": 24,
+        "origins": [
+          "2026-09-25",
+          "2026-11-02"
+        ],
+        "targets": [
+          "2026-09-26",
+          "2026-11-03"
+        ]
+      }
+    },
+    "version": "512cce112f1946a17225",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "7b4858ec4030ae8e543df34a95660c6df1cd4b2139bf6101810d6dc664c023ae",
+    "model_sha256": "ef2366987c2460c4a4765ad694e462c28d56562a5890c4a9bb9aa23ff429b24a",
+    "trained_at": "2026-11-13T09:26:38.728941+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "copra",
+      "market": "5",
+      "variety": "other",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 223,
+    "eligible_origins": 154,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-01",
+      "last": "2026-11-03",
+      "missing_calendar_days": 145,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 2,
+      "monthly_observation_counts": {
+        "1": 2,
+        "2": 13,
+        "3": 25,
+        "4": 26,
+        "5": 25,
+        "6": 26,
+        "7": 27,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 4
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "hist_gradient_boosting",
+    "validation_comparison": {
+      "last": {
+        "n": 21,
+        "mae": 2057.1428571428573,
+        "rmse": 2906.8064623438227,
+        "wape_pct": 11.162790697674419,
+        "smape_pct": 10.910905591664172,
+        "directional_accuracy": 0.23809523809523808
+      },
+      "mean14": {
+        "n": 21,
+        "mae": 1392.1768707482995,
+        "rmse": 2095.0175749753944,
+        "wape_pct": 7.554448135843486,
+        "smape_pct": 7.420127529683027,
+        "directional_accuracy": 0.6666666666666666
+      },
+      "ridge": {
+        "n": 21,
+        "mae": 1420.8890394160026,
+        "rmse": 2121.257039015723,
+        "wape_pct": 7.710250601482185,
+        "smape_pct": 7.576245419750974,
+        "directional_accuracy": 0.6190476190476191
+      },
+      "hist_gradient_boosting": {
+        "n": 21,
+        "mae": 1303.2200061101282,
+        "rmse": 1983.7514847957582,
+        "wape_pct": 7.0717364672642615,
+        "smape_pct": 6.945866507038772,
+        "directional_accuracy": 0.7142857142857143
+      }
+    },
+    "holdout": {
+      "n": 24,
+      "mae": 1568.2189626130323,
+      "rmse": 1879.796489344607,
+      "wape_pct": 8.756923011333825,
+      "smape_pct": 8.417838756509214,
+      "directional_accuracy": 0.4583333333333333
+    },
+    "holdout_baseline": {
+      "n": 24,
+      "mae": 808.3333333333334,
+      "rmse": 1060.2672619045948,
+      "wape_pct": 4.513727315030247,
+      "smape_pct": 4.4128079027869,
+      "directional_accuracy": 0.125
+    },
+    "calibration": {
+      "n": 21,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 1447.1221121822548,
+        "rmse": 1832.4011084961255,
+        "wape_pct": 7.942492382998104,
+        "smape_pct": 8.004072167093069,
+        "directional_accuracy": 0.6
+      },
+      {
+        "n": 15,
+        "mae": 801.6710888354032,
+        "rmse": 981.8468293461884,
+        "wape_pct": 4.358487253545143,
+        "smape_pct": 4.270558947360627,
+        "directional_accuracy": 0.6
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 82,
+        "origins": [
+          "2026-03-17",
+          "2026-07-11"
+        ],
+        "targets": [
+          "2026-03-20",
+          "2026-07-14"
+        ]
+      },
+      "validation": {
+        "n": 21,
+        "origins": [
+          "2026-07-15",
+          "2026-08-14"
+        ],
+        "targets": [
+          "2026-07-18",
+          "2026-08-17"
+        ]
+      },
+      "calibration": {
+        "n": 21,
+        "origins": [
+          "2026-08-18",
+          "2026-09-18"
+        ],
+        "targets": [
+          "2026-08-21",
+          "2026-09-21"
+        ]
+      },
+      "holdout": {
+        "n": 24,
+        "origins": [
+          "2026-09-22",
+          "2026-10-31"
+        ],
+        "targets": [
+          "2026-09-25",
+          "2026-11-03"
+        ]
+      }
+    },
+    "version": "d58b9402436cecb331ec",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "7b4858ec4030ae8e543df34a95660c6df1cd4b2139bf6101810d6dc664c023ae",
+    "model_sha256": "ab8f4a913507fc82723a27c1b349ce433a7a492720f759b952b15189dabfd251",
+    "trained_at": "2026-11-13T09:26:39.283236+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "copra",
+      "market": "5",
+      "variety": "other",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 223,
+    "eligible_origins": 181,
+    "status": "evaluated_research_only",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2025-11-01",
+      "last": "2026-11-03",
+      "missing_calendar_days": 145,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 2,
+      "monthly_observation_counts": {
+        "1": 2,
+        "2": 13,
+        "3": 25,
+        "4": 26,
+        "5": 25,
+        "6": 26,
+        "7": 27,
+        "8": 25,
+        "9": 25,
+        "10": 25,
+        "11": 4
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "candidate": "ridge",
+    "validation_comparison": {
+      "last": {
+        "n": 22,
+        "mae": 1713.6363636363637,
+        "rmse": 2442.8932176268518,
+        "wape_pct": 9.172749391727494,
+        "smape_pct": 8.840189722391408,
+        "directional_accuracy": 0.18181818181818182
+      },
+      "mean14": {
+        "n": 22,
+        "mae": 1208.441558441558,
+        "rmse": 1889.472592824582,
+        "wape_pct": 6.4685436218282915,
+        "smape_pct": 6.3325053804964515,
+        "directional_accuracy": 0.5909090909090909
+      },
+      "ridge": {
+        "n": 22,
+        "mae": 1145.02426257587,
+        "rmse": 1928.1917895925608,
+        "wape_pct": 6.129083643958428,
+        "smape_pct": 6.017635887873032,
+        "directional_accuracy": 0.5909090909090909
+      },
+      "hist_gradient_boosting": {
+        "n": 22,
+        "mae": 1223.5716085584334,
+        "rmse": 1991.4139046806342,
+        "wape_pct": 6.549531724643682,
+        "smape_pct": 6.411331294865846,
+        "directional_accuracy": 0.5
+      }
+    },
+    "holdout": {
+      "n": 28,
+      "mae": 917.8193286954755,
+      "rmse": 1189.7365729430796,
+      "wape_pct": 5.0959629592451545,
+      "smape_pct": 5.113832410686615,
+      "directional_accuracy": 0.5357142857142857
+    },
+    "holdout_baseline": {
+      "n": 28,
+      "mae": 1057.142857142857,
+      "rmse": 1351.189951751524,
+      "wape_pct": 5.869522109855245,
+      "smape_pct": 5.7726348150364695,
+      "directional_accuracy": 0.14285714285714285
+    },
+    "calibration": {
+      "n": 22,
+      "nominal_level": 0.9,
+      "radius": null,
+      "holdout_coverage": null,
+      "availability": "unavailable_under_30_calibration_samples"
+    },
+    "rolling_origin": [
+      {
+        "n": 15,
+        "mae": 2008.7164923572834,
+        "rmse": 2494.9459555740946,
+        "wape_pct": 11.077480656382079,
+        "smape_pct": 10.892431887196775,
+        "directional_accuracy": 0.6666666666666666
+      },
+      {
+        "n": 15,
+        "mae": 1043.3449609701588,
+        "rmse": 1395.4714477249936,
+        "wape_pct": 5.668299317114227,
+        "smape_pct": 5.648043062269229,
+        "directional_accuracy": 0.4666666666666667
+      }
+    ],
+    "partitions": {
+      "train": {
+        "n": 93,
+        "origins": [
+          "2026-03-17",
+          "2026-07-06"
+        ],
+        "targets": [
+          "2026-03-24",
+          "2026-07-13"
+        ]
+      },
+      "validation": {
+        "n": 22,
+        "origins": [
+          "2026-07-14",
+          "2026-08-08"
+        ],
+        "targets": [
+          "2026-07-21",
+          "2026-08-15"
+        ]
+      },
+      "calibration": {
+        "n": 22,
+        "origins": [
+          "2026-08-17",
+          "2026-09-11"
+        ],
+        "targets": [
+          "2026-08-24",
+          "2026-09-18"
+        ]
+      },
+      "holdout": {
+        "n": 28,
+        "origins": [
+          "2026-09-19",
+          "2026-10-27"
+        ],
+        "targets": [
+          "2026-09-26",
+          "2026-11-03"
+        ]
+      }
+    },
+    "version": "958e631d8b1d10d7f213",
+    "feature_schema": [
+      "lag_1_obs_inr_per_quintal",
+      "lag_2_obs_inr_per_quintal",
+      "lag_3_obs_inr_per_quintal",
+      "lag_7_obs_inr_per_quintal",
+      "lag_14_obs_inr_per_quintal",
+      "lag_30_obs_inr_per_quintal",
+      "rolling_mean_7_obs_inr_per_quintal",
+      "rolling_median_7_obs_inr_per_quintal",
+      "rolling_std_7_obs_inr_per_quintal",
+      "rolling_mean_14_obs_inr_per_quintal",
+      "rolling_median_14_obs_inr_per_quintal",
+      "rolling_std_14_obs_inr_per_quintal",
+      "rolling_mean_30_obs_inr_per_quintal",
+      "rolling_median_30_obs_inr_per_quintal",
+      "rolling_std_30_obs_inr_per_quintal",
+      "origin_weekday",
+      "origin_month",
+      "target_weekday",
+      "target_month",
+      "days_since_latest_report",
+      "history_30_obs_span_days"
+    ],
+    "source_fingerprint": "7b4858ec4030ae8e543df34a95660c6df1cd4b2139bf6101810d6dc664c023ae",
+    "model_sha256": "3574955acdb11797db00b0b8bd9f88ebbf01383d46a422c0c1b3081ff89c71d8",
+    "trained_at": "2026-11-13T09:26:39.625820+00:00",
+    "seed": 42,
+    "python": "3.12.10",
+    "promotion": "not_promoted",
+    "source_hashes": [
+      "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "onion",
+      "market": "2",
+      "variety": "local",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 47,
+    "eligible_origins": 9,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-29",
+      "last": "2026-11-04",
+      "missing_calendar_days": 21,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 3,
+      "monthly_observation_counts": {
+        "8": 2,
+        "9": 21,
+        "10": 22,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "fd9e56f514f1f09422a664c77c9432f8586898b776d4c5920af04c6b70a01846"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "onion",
+      "market": "2",
+      "variety": "local",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 47,
+    "eligible_origins": 9,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-29",
+      "last": "2026-11-04",
+      "missing_calendar_days": 21,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 3,
+      "monthly_observation_counts": {
+        "8": 2,
+        "9": 21,
+        "10": 22,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "fd9e56f514f1f09422a664c77c9432f8586898b776d4c5920af04c6b70a01846"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "onion",
+      "market": "2",
+      "variety": "local",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 47,
+    "eligible_origins": 9,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-08-29",
+      "last": "2026-11-04",
+      "missing_calendar_days": 21,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 3,
+      "monthly_observation_counts": {
+        "8": 2,
+        "9": 21,
+        "10": 22,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "fd9e56f514f1f09422a664c77c9432f8586898b776d4c5920af04c6b70a01846"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "onion",
+      "market": "2",
+      "variety": "puna",
+      "grade": "local"
+    },
+    "horizon": 1,
+    "raw_observations": 115,
+    "eligible_origins": 57,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-06-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "6": 24,
+        "7": 26,
+        "8": 20,
+        "9": 22,
+        "10": 21,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "fd9e56f514f1f09422a664c77c9432f8586898b776d4c5920af04c6b70a01846"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "onion",
+      "market": "2",
+      "variety": "puna",
+      "grade": "local"
+    },
+    "horizon": 3,
+    "raw_observations": 115,
+    "eligible_origins": 56,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-06-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "6": 24,
+        "7": 26,
+        "8": 20,
+        "9": 22,
+        "10": 21,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "fd9e56f514f1f09422a664c77c9432f8586898b776d4c5920af04c6b70a01846"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "onion",
+      "market": "2",
+      "variety": "puna",
+      "grade": "local"
+    },
+    "horizon": 7,
+    "raw_observations": 115,
+    "eligible_origins": 63,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-06-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "6": 24,
+        "7": 26,
+        "8": 20,
+        "9": 22,
+        "10": 21,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "fd9e56f514f1f09422a664c77c9432f8586898b776d4c5920af04c6b70a01846"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "potato",
+      "market": "1",
+      "variety": "local",
+      "grade": "medium"
+    },
+    "horizon": 1,
+    "raw_observations": 176,
+    "eligible_origins": 113,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-04-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "4": 25,
+        "5": 25,
+        "6": 26,
+        "7": 26,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "43ab05654c103a55ec7e9171de347f346bd1560e242dd080d2bccf9d2aed53a2"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "potato",
+      "market": "1",
+      "variety": "local",
+      "grade": "medium"
+    },
+    "horizon": 3,
+    "raw_observations": 176,
+    "eligible_origins": 112,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-04-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "4": 25,
+        "5": 25,
+        "6": 26,
+        "7": 26,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "43ab05654c103a55ec7e9171de347f346bd1560e242dd080d2bccf9d2aed53a2"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "potato",
+      "market": "1",
+      "variety": "local",
+      "grade": "medium"
+    },
+    "horizon": 7,
+    "raw_observations": 176,
+    "eligible_origins": 131,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-04-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 1,
+      "monthly_observation_counts": {
+        "4": 25,
+        "5": 25,
+        "6": 26,
+        "7": 26,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "43ab05654c103a55ec7e9171de347f346bd1560e242dd080d2bccf9d2aed53a2"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "potato",
+      "market": "1",
+      "variety": "potato",
+      "grade": "medium"
+    },
+    "horizon": 1,
+    "raw_observations": 176,
+    "eligible_origins": 113,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-04-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "4": 25,
+        "5": 25,
+        "6": 26,
+        "7": 26,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "43ab05654c103a55ec7e9171de347f346bd1560e242dd080d2bccf9d2aed53a2"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "potato",
+      "market": "1",
+      "variety": "potato",
+      "grade": "medium"
+    },
+    "horizon": 3,
+    "raw_observations": 176,
+    "eligible_origins": 112,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-04-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "4": 25,
+        "5": 25,
+        "6": 26,
+        "7": 26,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "43ab05654c103a55ec7e9171de347f346bd1560e242dd080d2bccf9d2aed53a2"
+    ]
+  },
+  {
+    "scope": {
+      "crop": "potato",
+      "market": "1",
+      "variety": "potato",
+      "grade": "medium"
+    },
+    "horizon": 7,
+    "raw_observations": 176,
+    "eligible_origins": 131,
+    "status": "insufficient_history",
+    "limitations": [
+      "Retrospective snapshot evaluation: original publication/revision times are unknown",
+      "Missing dates are not imputed; closures cannot be inferred from gaps",
+      "Intervals describe mandi reference prices, not buyer realization"
+    ],
+    "inspection": {
+      "first": "2026-04-01",
+      "last": "2026-11-04",
+      "missing_calendar_days": 42,
+      "duplicate_dates": 0,
+      "price_change_over_50pct": 0,
+      "monthly_observation_counts": {
+        "4": 25,
+        "5": 25,
+        "6": 26,
+        "7": 26,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 2
+      },
+      "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+    },
+    "source_hashes": [
+      "43ab05654c103a55ec7e9171de347f346bd1560e242dd080d2bccf9d2aed53a2"
+    ]
+  }
+]

@@ -1,0 +1,1334 @@
+{
+  "protocol": {
+    "purpose": "RESEARCH_ONLY sensitivity assumptions, not farm observations",
+    "quantity": "10",
+    "required_cash": "5000",
+    "storage_capacity": "10",
+    "quantity_increment": "1",
+    "market_step": "0.01",
+    "minimum_lot": "1",
+    "risk": "conservative",
+    "daily_loss": "0.002",
+    "daily_storage": "1",
+    "fixed_storage": "0",
+    "storage_payment": "later",
+    "sale_costs": {
+      "fixed_transport_inr": "100",
+      "fixed_transaction_inr": "50",
+      "transport_inr_per_quintal": "0",
+      "handling_inr_per_quintal": "0",
+      "market_fee_rate": "0",
+      "commission_rate": "0",
+      "assumptions": "RESEARCH_ONLY predeclared costs, not actual farmer charges"
+    }
+  },
+  "evaluation_kind": "retrospective_snapshot_research",
+  "strict_asof_results": "Unavailable: no original historical publication vintages or historical buyer quotes; no strict performance claim",
+  "limitations": [
+    "Assumed realization equals modal; not actual farmer transactions",
+    "Storage safety/loss/costs are protocol assumptions, not agronomic facts",
+    "Historical persistence scenario is not evaluation of the newly trained forecasting champions",
+    "No claim of additional farmer income",
+    "Feasible-origin results exclude no-feasible-plan periods; see source sample limitations"
+  ],
+  "series": [
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "bette",
+        "local"
+      ],
+      "research_n": 15,
+      "attempted_origins": 15,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "620.99",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.06666666666666667,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-02-09",
+          "target": "2026-02-12",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-03-02",
+          "target": "2026-03-05",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-13",
+          "target": "2026-04-16",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-24",
+          "target": "2026-04-27",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-15",
+          "target": "2026-05-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-26",
+          "target": "2026-05-29",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-05",
+          "target": "2026-06-08",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-16",
+          "target": "2026-06-19",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-29",
+          "target": "2026-07-02",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-20",
+          "target": "2026-07-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-07",
+          "target": "2026-08-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-31",
+          "target": "2026-09-03",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-21",
+          "target": "2026-09-24",
+          "net_difference": "9314.85",
+          "cash_success": true,
+          "hold_quantity": "8"
+        },
+        {
+          "origin": "2026-10-12",
+          "target": "2026-10-15",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-27",
+          "target": "2026-10-30",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "gorabalu",
+        "local"
+      ],
+      "research_n": 14,
+      "attempted_origins": 14,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "-928.5342857142857142857142857",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "-12999.48",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-02-06",
+          "target": "2026-02-09",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-02-27",
+          "target": "2026-03-02",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-03-10",
+          "target": "2026-03-13",
+          "net_difference": "-12999.48",
+          "cash_success": true,
+          "hold_quantity": "9"
+        },
+        {
+          "origin": "2026-03-20",
+          "target": "2026-03-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-06",
+          "target": "2026-04-09",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-08",
+          "target": "2026-05-11",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-19",
+          "target": "2026-05-22",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-29",
+          "target": "2026-06-01",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-09",
+          "target": "2026-06-12",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-30",
+          "target": "2026-07-03",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-20",
+          "target": "2026-07-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-07",
+          "target": "2026-08-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-01",
+          "target": "2026-09-04",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-22",
+          "target": "2026-09-25",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "gorabalu",
+        "medium"
+      ],
+      "research_n": 0,
+      "attempted_origins": 0,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": null,
+      "median_net_gain": null,
+      "periods_won_fraction": null,
+      "worst_net_difference": null,
+      "cash_success_fraction": null,
+      "samples": []
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "new variety",
+        "local"
+      ],
+      "research_n": 1,
+      "attempted_origins": 1,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-09-22",
+          "target": "2026-09-25",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "other",
+        "local"
+      ],
+      "research_n": 18,
+      "attempted_origins": 18,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "6413.503333333333333333333333",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.05555555555555555,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-03-09",
+          "target": "2026-03-12",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-03-28",
+          "target": "2026-03-31",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-07",
+          "target": "2026-04-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-15",
+          "target": "2026-04-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-27",
+          "target": "2026-04-30",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-29",
+          "target": "2026-06-01",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-05",
+          "target": "2026-06-08",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-15",
+          "target": "2026-06-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-24",
+          "target": "2026-06-27",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-07",
+          "target": "2026-07-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-18",
+          "target": "2026-07-21",
+          "net_difference": "115443.06",
+          "cash_success": true,
+          "hold_quantity": "9"
+        },
+        {
+          "origin": "2026-07-26",
+          "target": "2026-07-29",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-03",
+          "target": "2026-08-06",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-13",
+          "target": "2026-08-16",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-24",
+          "target": "2026-08-27",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-02",
+          "target": "2026-09-05",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-22",
+          "target": "2026-09-25",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-12",
+          "target": "2026-10-15",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "rashi",
+        "local"
+      ],
+      "research_n": 15,
+      "attempted_origins": 15,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-02-06",
+          "target": "2026-02-09",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-02-27",
+          "target": "2026-03-02",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-03-10",
+          "target": "2026-03-13",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-03-20",
+          "target": "2026-03-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-13",
+          "target": "2026-04-16",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-24",
+          "target": "2026-04-27",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-15",
+          "target": "2026-05-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-26",
+          "target": "2026-05-29",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-05",
+          "target": "2026-06-08",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-16",
+          "target": "2026-06-19",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-07",
+          "target": "2026-07-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-27",
+          "target": "2026-07-30",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-17",
+          "target": "2026-08-20",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-07",
+          "target": "2026-09-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-28",
+          "target": "2026-10-01",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "saraku",
+        "local"
+      ],
+      "research_n": 10,
+      "attempted_origins": 10,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "16552.152",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.1,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-02-06",
+          "target": "2026-02-09",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-03-02",
+          "target": "2026-03-05",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-27",
+          "target": "2026-04-30",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-18",
+          "target": "2026-05-21",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-08",
+          "target": "2026-06-11",
+          "net_difference": "165521.52",
+          "cash_success": true,
+          "hold_quantity": "9"
+        },
+        {
+          "origin": "2026-06-30",
+          "target": "2026-07-03",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-20",
+          "target": "2026-07-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-07",
+          "target": "2026-08-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-01",
+          "target": "2026-09-04",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-22",
+          "target": "2026-09-25",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "saraku",
+        "medium"
+      ],
+      "research_n": 0,
+      "attempted_origins": 0,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": null,
+      "median_net_gain": null,
+      "periods_won_fraction": null,
+      "worst_net_difference": null,
+      "cash_success_fraction": null,
+      "samples": []
+    },
+    {
+      "scope": [
+        "arecanut",
+        "4",
+        "sippegotu",
+        "local"
+      ],
+      "research_n": 2,
+      "attempted_origins": 2,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-03-30",
+          "target": "2026-04-02",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-12",
+          "target": "2026-07-15",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "copra",
+        "5",
+        "copra",
+        "local"
+      ],
+      "research_n": 3,
+      "attempted_origins": 3,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-07-06",
+          "target": "2026-07-09",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-31",
+          "target": "2026-09-03",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-28",
+          "target": "2026-10-01",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "copra",
+        "5",
+        "other",
+        "local"
+      ],
+      "research_n": 22,
+      "attempted_origins": 22,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-03-17",
+          "target": "2026-03-20",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-03",
+          "target": "2026-04-06",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-11",
+          "target": "2026-04-14",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-04-20",
+          "target": "2026-04-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-15",
+          "target": "2026-05-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-23",
+          "target": "2026-05-26",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-01",
+          "target": "2026-06-04",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-09",
+          "target": "2026-06-12",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-17",
+          "target": "2026-06-20",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-03",
+          "target": "2026-07-06",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-11",
+          "target": "2026-07-14",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-20",
+          "target": "2026-07-23",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-28",
+          "target": "2026-07-31",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-05",
+          "target": "2026-08-08",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-14",
+          "target": "2026-08-17",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-22",
+          "target": "2026-08-25",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-31",
+          "target": "2026-09-03",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-08",
+          "target": "2026-09-11",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-25",
+          "target": "2026-09-28",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-03",
+          "target": "2026-10-06",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-14",
+          "target": "2026-10-17",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-30",
+          "target": "2026-11-02",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "onion",
+        "2",
+        "local",
+        "local"
+      ],
+      "research_n": 1,
+      "attempted_origins": 1,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-10-10",
+          "target": "2026-10-13",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "onion",
+        "2",
+        "puna",
+        "local"
+      ],
+      "research_n": 10,
+      "attempted_origins": 10,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-07-08",
+          "target": "2026-07-11",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-17",
+          "target": "2026-07-20",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-25",
+          "target": "2026-07-28",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-03",
+          "target": "2026-08-06",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-14",
+          "target": "2026-08-17",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-25",
+          "target": "2026-08-28",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-15",
+          "target": "2026-09-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-03",
+          "target": "2026-10-06",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-12",
+          "target": "2026-10-15",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-24",
+          "target": "2026-10-27",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "potato",
+        "1",
+        "local",
+        "medium"
+      ],
+      "research_n": 17,
+      "attempted_origins": 17,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-05-08",
+          "target": "2026-05-11",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-16",
+          "target": "2026-05-19",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-25",
+          "target": "2026-05-28",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-02",
+          "target": "2026-06-05",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-10",
+          "target": "2026-06-13",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-26",
+          "target": "2026-06-29",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-04",
+          "target": "2026-07-07",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-13",
+          "target": "2026-07-16",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-21",
+          "target": "2026-07-24",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-07",
+          "target": "2026-08-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-18",
+          "target": "2026-08-21",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-04",
+          "target": "2026-09-07",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-15",
+          "target": "2026-09-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-23",
+          "target": "2026-09-26",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-10",
+          "target": "2026-10-13",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-19",
+          "target": "2026-10-22",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-28",
+          "target": "2026-10-31",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    },
+    {
+      "scope": [
+        "potato",
+        "1",
+        "potato",
+        "medium"
+      ],
+      "research_n": 17,
+      "attempted_origins": 17,
+      "infeasible_origins": 0,
+      "strict_asof_eligible_origins": 0,
+      "mean_net_gain": "0",
+      "median_net_gain": "0.00",
+      "periods_won_fraction": 0.0,
+      "worst_net_difference": "0.00",
+      "cash_success_fraction": 1.0,
+      "samples": [
+        {
+          "origin": "2026-05-08",
+          "target": "2026-05-11",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-16",
+          "target": "2026-05-19",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-05-25",
+          "target": "2026-05-28",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-02",
+          "target": "2026-06-05",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-10",
+          "target": "2026-06-13",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-06-26",
+          "target": "2026-06-29",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-04",
+          "target": "2026-07-07",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-13",
+          "target": "2026-07-16",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-07-21",
+          "target": "2026-07-24",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-07",
+          "target": "2026-08-10",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-08-18",
+          "target": "2026-08-21",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-04",
+          "target": "2026-09-07",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-15",
+          "target": "2026-09-18",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-09-23",
+          "target": "2026-09-26",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-10",
+          "target": "2026-10-13",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-19",
+          "target": "2026-10-22",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        },
+        {
+          "origin": "2026-10-28",
+          "target": "2026-10-31",
+          "net_difference": "0.00",
+          "cash_success": true,
+          "hold_quantity": "0"
+        }
+      ]
+    }
+  ]
+}

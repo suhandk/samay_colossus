@@ -1,0 +1,15 @@
+{
+  "url": "https://samay-colossus-app.vercel.app",
+  "manifestErrors": [],
+  "installability": {
+    "installabilityErrors": []
+  },
+  "backend": {
+    "status": "ok",
+    "service": "samay",
+    "version": "0.1.0"
+  },
+  "pageErrors": [],
+  "offlineReload": true,
+  "noCachedAPIs": true
+}

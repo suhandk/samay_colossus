@@ -1,0 +1,193 @@
+{
+  "scope": {
+    "crop": "copra",
+    "market": "5",
+    "variety": "other",
+    "grade": "local"
+  },
+  "horizon": 3,
+  "raw_observations": 223,
+  "eligible_origins": 154,
+  "status": "evaluated_research_only",
+  "limitations": [
+    "Retrospective snapshot evaluation: original publication/revision times are unknown",
+    "Missing dates are not imputed; closures cannot be inferred from gaps",
+    "Intervals describe mandi reference prices, not buyer realization"
+  ],
+  "inspection": {
+    "first": "2025-11-01",
+    "last": "2026-11-03",
+    "missing_calendar_days": 145,
+    "duplicate_dates": 0,
+    "price_change_over_50pct": 2,
+    "monthly_observation_counts": {
+      "1": 2,
+      "2": 13,
+      "3": 25,
+      "4": 26,
+      "5": 25,
+      "6": 26,
+      "7": 27,
+      "8": 25,
+      "9": 25,
+      "10": 25,
+      "11": 4
+    },
+    "seasonality": "Monthly counts are descriptive; insufficient multiple-year evidence for seasonal claims"
+  },
+  "candidate": "hist_gradient_boosting",
+  "validation_comparison": {
+    "last": {
+      "n": 21,
+      "mae": 2057.1428571428573,
+      "rmse": 2906.8064623438227,
+      "wape_pct": 11.162790697674419,
+      "smape_pct": 10.910905591664172,
+      "directional_accuracy": 0.23809523809523808
+    },
+    "mean14": {
+      "n": 21,
+      "mae": 1392.1768707482995,
+      "rmse": 2095.0175749753944,
+      "wape_pct": 7.554448135843486,
+      "smape_pct": 7.420127529683027,
+      "directional_accuracy": 0.6666666666666666
+    },
+    "ridge": {
+      "n": 21,
+      "mae": 1420.8890394160026,
+      "rmse": 2121.257039015723,
+      "wape_pct": 7.710250601482185,
+      "smape_pct": 7.576245419750974,
+      "directional_accuracy": 0.6190476190476191
+    },
+    "hist_gradient_boosting": {
+      "n": 21,
+      "mae": 1303.2200061101282,
+      "rmse": 1983.7514847957582,
+      "wape_pct": 7.0717364672642615,
+      "smape_pct": 6.945866507038772,
+      "directional_accuracy": 0.7142857142857143
+    }
+  },
+  "holdout": {
+    "n": 24,
+    "mae": 1568.2189626130323,
+    "rmse": 1879.796489344607,
+    "wape_pct": 8.756923011333825,
+    "smape_pct": 8.417838756509214,
+    "directional_accuracy": 0.4583333333333333
+  },
+  "holdout_baseline": {
+    "n": 24,
+    "mae": 808.3333333333334,
+    "rmse": 1060.2672619045948,
+    "wape_pct": 4.513727315030247,
+    "smape_pct": 4.4128079027869,
+    "directional_accuracy": 0.125
+  },
+  "calibration": {
+    "n": 21,
+    "nominal_level": 0.9,
+    "radius": null,
+    "holdout_coverage": null,
+    "availability": "unavailable_under_30_calibration_samples"
+  },
+  "rolling_origin": [
+    {
+      "n": 15,
+      "mae": 1447.1221121822548,
+      "rmse": 1832.4011084961255,
+      "wape_pct": 7.942492382998104,
+      "smape_pct": 8.004072167093069,
+      "directional_accuracy": 0.6
+    },
+    {
+      "n": 15,
+      "mae": 801.6710888354032,
+      "rmse": 981.8468293461884,
+      "wape_pct": 4.358487253545143,
+      "smape_pct": 4.270558947360627,
+      "directional_accuracy": 0.6
+    }
+  ],
+  "partitions": {
+    "train": {
+      "n": 82,
+      "origins": [
+        "2026-03-17",
+        "2026-07-11"
+      ],
+      "targets": [
+        "2026-03-20",
+        "2026-07-14"
+      ]
+    },
+    "validation": {
+      "n": 21,
+      "origins": [
+        "2026-07-15",
+        "2026-08-14"
+      ],
+      "targets": [
+        "2026-07-18",
+        "2026-08-17"
+      ]
+    },
+    "calibration": {
+      "n": 21,
+      "origins": [
+        "2026-08-18",
+        "2026-09-18"
+      ],
+      "targets": [
+        "2026-08-21",
+        "2026-09-21"
+      ]
+    },
+    "holdout": {
+      "n": 24,
+      "origins": [
+        "2026-09-22",
+        "2026-10-31"
+      ],
+      "targets": [
+        "2026-09-25",
+        "2026-11-03"
+      ]
+    }
+  },
+  "version": "d58b9402436cecb331ec",
+  "feature_schema": [
+    "lag_1_obs_inr_per_quintal",
+    "lag_2_obs_inr_per_quintal",
+    "lag_3_obs_inr_per_quintal",
+    "lag_7_obs_inr_per_quintal",
+    "lag_14_obs_inr_per_quintal",
+    "lag_30_obs_inr_per_quintal",
+    "rolling_mean_7_obs_inr_per_quintal",
+    "rolling_median_7_obs_inr_per_quintal",
+    "rolling_std_7_obs_inr_per_quintal",
+    "rolling_mean_14_obs_inr_per_quintal",
+    "rolling_median_14_obs_inr_per_quintal",
+    "rolling_std_14_obs_inr_per_quintal",
+    "rolling_mean_30_obs_inr_per_quintal",
+    "rolling_median_30_obs_inr_per_quintal",
+    "rolling_std_30_obs_inr_per_quintal",
+    "origin_weekday",
+    "origin_month",
+    "target_weekday",
+    "target_month",
+    "days_since_latest_report",
+    "history_30_obs_span_days"
+  ],
+  "source_fingerprint": "7b4858ec4030ae8e543df34a95660c6df1cd4b2139bf6101810d6dc664c023ae",
+  "model_sha256": "ab8f4a913507fc82723a27c1b349ce433a7a492720f759b952b15189dabfd251",
+  "trained_at": "2026-11-13T09:27:52.197032+00:00",
+  "seed": 42,
+  "python": "3.12.10",
+  "promotion": "not_promoted",
+  "source_hashes": [
+    "8971babb13fea9cae0bf12ea48f51687b2a354955a25f7ea612eeff3d1724094"
+  ]
+}

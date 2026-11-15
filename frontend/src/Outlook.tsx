@@ -1,0 +1,13 @@
+import {apiFetch} from './api';
+import {useState} from 'react';
+import {useQuery} from '@tanstack/react-query';
+import {Catalog} from './Planner';
+import {Lang,tr,money,dateText} from './i18n';
+export function Outlook({lang,catalog}:{lang:Lang;catalog?:Catalog}){
+ const [crop,setCrop]=useState(''),[market,setMarket]=useState(''),[choice,setChoice]=useState('');const t=(k:Parameters<typeof tr>[1])=>tr(lang,k);
+ const registry=useQuery<{items:{commodity:string;market:string;variety:string;grade:string;horizon:number;version:string}[]}>({queryKey:['model-series'],queryFn:async({signal})=>{const r=await apiFetch('/api/v1/models/availability',{signal});if(!r.ok)throw Error();return r.json()}});
+ const entries=registry.data?.items.filter(e=>e.commodity===catalog?.crops.find(c=>c.id===crop)?.names.en&&e.market===catalog?.markets.find(m=>m.id===market)?.names.en)??[];
+ const selected=entries.find(e=>e.version===choice);
+ const prediction=useQuery<{price:number;target_date:string;intervals:{lower:number;upper:number;nominal_level:number}[]}>({queryKey:['forecast',crop,market,choice],enabled:!!selected,queryFn:async({signal})=>{const r=await apiFetch('/api/v1/forecasts?'+new URLSearchParams({crop,market,variety:selected!.variety,grade:selected!.grade,horizon:String(selected!.horizon)}),{signal});if(!r.ok)throw Error();return r.json()},retry:false});
+ return <section><aside>{t('researchOnly')}</aside><label>{t('crop')}<select value={crop} onChange={e=>{setCrop(e.target.value);setChoice('')}}><option value="">—</option>{catalog?.crops.map(c=><option key={c.id} value={c.id}>{c.names[lang]}</option>)}</select></label><label>{t('market')}<select value={market} onChange={e=>{setMarket(e.target.value);setChoice('')}}><option value="">—</option>{catalog?.markets.map(m=><option key={m.id} value={m.id}>{m.names[lang]}</option>)}</select></label><label>{t('variety')} · {t('days')}<select value={choice} onChange={e=>setChoice(e.target.value)}><option value="">—</option>{entries.map(e=><option key={e.version} value={e.version}>{e.variety} / {e.grade} · {e.horizon}</option>)}</select></label>{prediction.isFetching&&<p>{t('loading')}</p>}{prediction.isError&&<aside>{t('noForecast')}<button onClick={()=>prediction.refetch()}>{t('retry')}</button></aside>}{prediction.data&&!prediction.isError&&<article><p>{dateText(prediction.data.target_date,lang)}</p><strong>{money(prediction.data.price,lang)} / 100 kg</strong>{prediction.data.intervals.map(i=><p key={i.nominal_level}>{i.nominal_level*100}%: {money(i.lower,lang)} – {money(i.upper,lang)}</p>)}<p>{t('researchOnly')}</p></article>}</section>
+}

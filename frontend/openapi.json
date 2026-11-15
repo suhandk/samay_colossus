@@ -1,0 +1,1888 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SAMAY",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/catalog": {
+      "get": {
+        "summary": "Catalog",
+        "operationId": "catalog_api_catalog_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/crops": {
+      "get": {
+        "summary": "Crops",
+        "operationId": "crops_api_v1_crops_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/markets": {
+      "get": {
+        "summary": "Markets",
+        "operationId": "markets_api_v1_markets_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/prices/history": {
+      "get": {
+        "summary": "History",
+        "operationId": "history_api_v1_prices_history_get",
+        "parameters": [
+          {
+            "name": "crop",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Crop"
+            }
+          },
+          {
+            "name": "market",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Market"
+            }
+          },
+          {
+            "name": "variety",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Variety"
+            }
+          },
+          {
+            "name": "grade",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Grade"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Start"
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "End"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 1000,
+              "minimum": 1,
+              "default": 100,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/prices/latest": {
+      "get": {
+        "summary": "Latest",
+        "operationId": "latest_api_v1_prices_latest_get",
+        "parameters": [
+          {
+            "name": "crop",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Crop"
+            }
+          },
+          {
+            "name": "market",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Market"
+            }
+          },
+          {
+            "name": "variety",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Variety"
+            }
+          },
+          {
+            "name": "grade",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Grade"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/markets/availability": {
+      "get": {
+        "summary": "Coverage",
+        "operationId": "coverage_api_v1_markets_availability_get",
+        "parameters": [
+          {
+            "name": "crop",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Crop"
+            }
+          },
+          {
+            "name": "market",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Market"
+            }
+          },
+          {
+            "name": "variety",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Variety"
+            }
+          },
+          {
+            "name": "grade",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Grade"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Start"
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "End"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/prices/coverage": {
+      "get": {
+        "summary": "Coverage",
+        "operationId": "coverage_api_v1_prices_coverage_get",
+        "parameters": [
+          {
+            "name": "crop",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Crop"
+            }
+          },
+          {
+            "name": "market",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Market"
+            }
+          },
+          {
+            "name": "variety",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Variety"
+            }
+          },
+          {
+            "name": "grade",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Grade"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Start"
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "End"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data/sources": {
+      "get": {
+        "summary": "Sources",
+        "operationId": "sources_api_v1_data_sources_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data/status": {
+      "get": {
+        "summary": "Status",
+        "operationId": "status_api_v1_data_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/recommendations": {
+      "post": {
+        "summary": "Recommend",
+        "operationId": "recommend_api_v1_recommendations_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Draft"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlannerResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/recommendations/{identifier}/recalculate-draft": {
+      "post": {
+        "summary": "Recalculate Draft",
+        "operationId": "recalculate_draft_api_v1_recommendations__identifier__recalculate_draft_post",
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Identifier"
+            }
+          },
+          {
+            "name": "x-plan-token",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Plan-Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Draft"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlannerResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/availability": {
+      "get": {
+        "summary": "Models Available",
+        "operationId": "models_available_api_v1_models_availability_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/forecasts": {
+      "get": {
+        "summary": "Price Outlook",
+        "operationId": "price_outlook_api_v1_forecasts_get",
+        "parameters": [
+          {
+            "name": "crop",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Crop"
+            }
+          },
+          {
+            "name": "market",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Market"
+            }
+          },
+          {
+            "name": "variety",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Variety"
+            }
+          },
+          {
+            "name": "grade",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Grade"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Horizon"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/predict": {
+      "post": {
+        "summary": "Predict",
+        "operationId": "predict_api_v1_predict_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PredictionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/status": {
+      "get": {
+        "summary": "Status",
+        "operationId": "status_api_v1_models_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/recommend": {
+      "post": {
+        "summary": "Recommend",
+        "operationId": "recommend_api_v1_recommend_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DecisionInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/recommendations/compare": {
+      "post": {
+        "summary": "Compare",
+        "operationId": "compare_api_v1_recommendations_compare_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DecisionInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/recommendations/{identifier}": {
+      "get": {
+        "summary": "Get Recommendation",
+        "operationId": "get_recommendation_api_v1_recommendations__identifier__get",
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Identifier"
+            }
+          },
+          {
+            "name": "x-plan-token",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Plan-Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/recommendations/{identifier}/recalculate": {
+      "post": {
+        "summary": "Recalculate",
+        "operationId": "recalculate_api_v1_recommendations__identifier__recalculate_post",
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Identifier"
+            }
+          },
+          {
+            "name": "x-plan-token",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Plan-Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DecisionInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DecisionInput": {
+        "properties": {
+          "crop": {
+            "type": "string",
+            "title": "Crop"
+          },
+          "market": {
+            "type": "string",
+            "title": "Market"
+          },
+          "variety": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Variety"
+          },
+          "grade": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Grade"
+          },
+          "quantity": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100000.0,
+                "minimum": 0.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Quantity"
+          },
+          "buyer_price": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Buyer Price"
+          },
+          "reference_scenario": {
+            "type": "boolean",
+            "title": "Reference Scenario",
+            "default": false
+          },
+          "required_cash": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Required Cash"
+          },
+          "cash_deadline": {
+            "type": "string",
+            "format": "date",
+            "title": "Cash Deadline"
+          },
+          "storage": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unsure"
+            ],
+            "title": "Storage"
+          },
+          "storage_capacity": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Storage Capacity"
+          },
+          "safe_holding_days": {
+            "type": "integer",
+            "maximum": 730.0,
+            "minimum": 0.0,
+            "title": "Safe Holding Days"
+          },
+          "storage_evidence": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Storage Evidence"
+          },
+          "minimum_lot": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100000.0,
+                "minimum": 0.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Minimum Lot"
+          },
+          "quantity_increment": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100000.0,
+                "minimum": 0.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Quantity Increment"
+          },
+          "market_step": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100000.0,
+                "minimum": 0.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Market Step"
+          },
+          "today_costs": {
+            "$ref": "#/components/schemas/KnownCosts"
+          },
+          "risk": {
+            "type": "string",
+            "enum": [
+              "conservative",
+              "balanced",
+              "aggressive"
+            ],
+            "title": "Risk",
+            "default": "conservative"
+          },
+          "holding_options": {
+            "items": {
+              "$ref": "#/components/schemas/FutureOption"
+            },
+            "type": "array",
+            "title": "Holding Options",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "crop",
+          "market",
+          "variety",
+          "grade",
+          "quantity",
+          "required_cash",
+          "cash_deadline",
+          "storage",
+          "storage_capacity",
+          "safe_holding_days",
+          "storage_evidence",
+          "minimum_lot",
+          "quantity_increment",
+          "market_step",
+          "today_costs"
+        ],
+        "title": "DecisionInput"
+      },
+      "Draft": {
+        "properties": {
+          "crop": {
+            "type": "string",
+            "title": "Crop"
+          },
+          "market": {
+            "type": "string",
+            "title": "Market"
+          },
+          "quantity": {
+            "type": "string",
+            "title": "Quantity"
+          },
+          "buyer": {
+            "type": "string",
+            "title": "Buyer"
+          },
+          "cash": {
+            "type": "string",
+            "title": "Cash"
+          },
+          "due": {
+            "type": "string",
+            "title": "Due",
+            "default": ""
+          },
+          "storage": {
+            "type": "string",
+            "title": "Storage"
+          },
+          "capacity": {
+            "type": "string",
+            "title": "Capacity",
+            "default": ""
+          },
+          "days": {
+            "type": "string",
+            "title": "Days",
+            "default": ""
+          },
+          "storageCost": {
+            "type": "string",
+            "title": "Storagecost",
+            "default": ""
+          },
+          "loss": {
+            "type": "string",
+            "title": "Loss",
+            "default": ""
+          },
+          "transport": {
+            "type": "string",
+            "title": "Transport",
+            "default": ""
+          },
+          "labour": {
+            "type": "string",
+            "title": "Labour",
+            "default": ""
+          },
+          "commission": {
+            "type": "string",
+            "title": "Commission",
+            "default": ""
+          },
+          "other": {
+            "type": "string",
+            "title": "Other",
+            "default": ""
+          },
+          "reference": {
+            "type": "boolean",
+            "title": "Reference",
+            "default": false
+          },
+          "kind": {
+            "type": "string",
+            "title": "Kind",
+            "default": ""
+          },
+          "futureTransport": {
+            "type": "string",
+            "title": "Futuretransport",
+            "default": ""
+          },
+          "futureLabour": {
+            "type": "string",
+            "title": "Futurelabour",
+            "default": ""
+          },
+          "futureCommission": {
+            "type": "string",
+            "title": "Futurecommission",
+            "default": ""
+          },
+          "futureOther": {
+            "type": "string",
+            "title": "Futureother",
+            "default": ""
+          },
+          "adversePrice": {
+            "type": "string",
+            "title": "Adverseprice",
+            "default": ""
+          },
+          "realization": {
+            "type": "string",
+            "title": "Realization",
+            "default": ""
+          },
+          "storagePayment": {
+            "type": "string",
+            "title": "Storagepayment",
+            "default": "later"
+          },
+          "increment": {
+            "type": "string",
+            "title": "Increment",
+            "default": ""
+          },
+          "minimumLot": {
+            "type": "string",
+            "title": "Minimumlot",
+            "default": ""
+          },
+          "marketStep": {
+            "type": "string",
+            "title": "Marketstep",
+            "default": ""
+          },
+          "risk": {
+            "type": "string",
+            "title": "Risk",
+            "default": "conservative"
+          },
+          "storageEvidence": {
+            "type": "string",
+            "title": "Storageevidence",
+            "default": ""
+          },
+          "saleDateConfirmed": {
+            "type": "boolean",
+            "title": "Saledateconfirmed",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "crop",
+          "market",
+          "quantity",
+          "buyer",
+          "cash",
+          "storage"
+        ],
+        "title": "Draft"
+      },
+      "FutureOption": {
+        "properties": {
+          "days": {
+            "type": "integer",
+            "maximum": 7.0,
+            "minimum": 1.0,
+            "title": "Days"
+          },
+          "daily_loss_fractions": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "maximum": 1.0,
+                  "minimum": 0.0
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Daily Loss Fractions"
+          },
+          "daily_storage_inr_per_quintal": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "maximum": 1000000000.0,
+                  "minimum": 0.0
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Daily Storage Inr Per Quintal"
+          },
+          "fixed_storage_inr": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Fixed Storage Inr"
+          },
+          "storage_payment": {
+            "type": "string",
+            "enum": [
+              "today",
+              "later"
+            ],
+            "title": "Storage Payment"
+          },
+          "future_sale_costs": {
+            "$ref": "#/components/schemas/KnownCosts"
+          },
+          "assumptions": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Assumptions"
+          },
+          "sale_date_availability": {
+            "type": "string",
+            "enum": [
+              "confirmed",
+              "unknown"
+            ],
+            "title": "Sale Date Availability"
+          },
+          "realization_multiplier": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 2.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Realization Multiplier"
+          },
+          "adverse_price": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Adverse Price"
+          },
+          "user_future_price": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "User Future Price"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "days",
+          "daily_loss_fractions",
+          "daily_storage_inr_per_quintal",
+          "fixed_storage_inr",
+          "storage_payment",
+          "future_sale_costs",
+          "assumptions",
+          "sale_date_availability",
+          "realization_multiplier",
+          "adverse_price"
+        ],
+        "title": "FutureOption"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "KnownCosts": {
+        "properties": {
+          "fixed_transport_inr": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Fixed Transport Inr"
+          },
+          "fixed_transaction_inr": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Fixed Transaction Inr"
+          },
+          "transport_inr_per_quintal": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Transport Inr Per Quintal"
+          },
+          "handling_inr_per_quintal": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000000000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Handling Inr Per Quintal"
+          },
+          "market_fee_rate": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Market Fee Rate"
+          },
+          "commission_rate": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Commission Rate"
+          },
+          "assumptions": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Assumptions"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "fixed_transport_inr",
+          "fixed_transaction_inr",
+          "transport_inr_per_quintal",
+          "handling_inr_per_quintal",
+          "market_fee_rate",
+          "commission_rate",
+          "assumptions"
+        ],
+        "title": "KnownCosts"
+      },
+      "OptimizationOutput": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "recommended_plan": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PlanOutput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "feasible_plans": {
+            "items": {
+              "$ref": "#/components/schemas/PlanOutput"
+            },
+            "type": "array",
+            "title": "Feasible Plans"
+          },
+          "comparison_plans": {
+            "items": {
+              "$ref": "#/components/schemas/PlanOutput"
+            },
+            "type": "array",
+            "title": "Comparison Plans"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "status",
+          "recommended_plan",
+          "feasible_plans",
+          "comparison_plans"
+        ],
+        "title": "OptimizationOutput"
+      },
+      "PlanLedger": {
+        "properties": {
+          "transport_inr": {
+            "type": "string",
+            "title": "Transport Inr"
+          },
+          "handling_inr": {
+            "type": "string",
+            "title": "Handling Inr"
+          },
+          "commission_inr": {
+            "type": "string",
+            "title": "Commission Inr"
+          },
+          "fixed_transaction_inr": {
+            "type": "string",
+            "title": "Fixed Transaction Inr"
+          },
+          "market_fee_inr": {
+            "type": "string",
+            "title": "Market Fee Inr"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "transport_inr",
+          "handling_inr",
+          "commission_inr",
+          "fixed_transaction_inr",
+          "market_fee_inr"
+        ],
+        "title": "PlanLedger"
+      },
+      "PlanOutput": {
+        "properties": {
+          "sell_today_quintals": {
+            "type": "string",
+            "title": "Sell Today Quintals"
+          },
+          "hold_initial_quintals": {
+            "type": "string",
+            "title": "Hold Initial Quintals"
+          },
+          "cash_today_inr": {
+            "type": "string",
+            "title": "Cash Today Inr"
+          },
+          "total_net_inr": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Total Net Inr"
+          },
+          "storage_cost_inr": {
+            "type": "string",
+            "title": "Storage Cost Inr"
+          },
+          "holding_days": {
+            "type": "integer",
+            "title": "Holding Days"
+          },
+          "proposed_sale_date": {
+            "type": "string",
+            "title": "Proposed Sale Date"
+          },
+          "central_later_net_after_storage_inr": {
+            "type": "string",
+            "title": "Central Later Net After Storage Inr"
+          },
+          "deterioration_loss_quintals": {
+            "type": "string",
+            "title": "Deterioration Loss Quintals"
+          },
+          "break_even_future_price_inr_per_quintal": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Break Even Future Price Inr Per Quintal"
+          },
+          "recommendation_eligible": {
+            "type": "boolean",
+            "title": "Recommendation Eligible"
+          },
+          "today_sale": {
+            "$ref": "#/components/schemas/PlanLedger"
+          },
+          "difference_vs_sell_all_now_inr": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Difference Vs Sell All Now Inr"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "sell_today_quintals",
+          "hold_initial_quintals",
+          "cash_today_inr",
+          "total_net_inr",
+          "storage_cost_inr",
+          "holding_days",
+          "proposed_sale_date",
+          "central_later_net_after_storage_inr",
+          "deterioration_loss_quintals",
+          "break_even_future_price_inr_per_quintal",
+          "recommendation_eligible",
+          "today_sale",
+          "difference_vs_sell_all_now_inr"
+        ],
+        "title": "PlanOutput"
+      },
+      "PlannerResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "generated_at": {
+            "type": "string",
+            "title": "Generated At"
+          },
+          "inputs": {
+            "$ref": "#/components/schemas/Draft"
+          },
+          "optimization": {
+            "$ref": "#/components/schemas/OptimizationOutput"
+          },
+          "scope": {
+            "type": "string",
+            "title": "Scope"
+          },
+          "reference_price_based": {
+            "type": "boolean",
+            "title": "Reference Price Based"
+          },
+          "access_token": {
+            "type": "string",
+            "title": "Access Token"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "id",
+          "generated_at",
+          "inputs",
+          "optimization",
+          "scope",
+          "reference_price_based",
+          "access_token"
+        ],
+        "title": "PlannerResponse"
+      },
+      "PredictionRequest": {
+        "properties": {
+          "crop": {
+            "type": "string",
+            "title": "Crop"
+          },
+          "market": {
+            "type": "string",
+            "title": "Market"
+          },
+          "variety": {
+            "type": "string",
+            "title": "Variety"
+          },
+          "grade": {
+            "type": "string",
+            "title": "Grade"
+          },
+          "horizon": {
+            "type": "integer",
+            "maximum": 7.0,
+            "minimum": 1.0,
+            "title": "Horizon"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "crop",
+          "market",
+          "variety",
+          "grade",
+          "horizon"
+        ],
+        "title": "PredictionRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-11-13T09:15:21.782419+00:00",
+  "items": [
+    {
+      "crop_id": "arecanut",
+      "market_id": "1",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "arecanut",
+      "market_id": "2",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "arecanut",
+      "market_id": "3",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "arecanut",
+      "market_id": "4",
+      "count": 1182,
+      "status": "available",
+      "start": "2025-11-03",
+      "end": "2026-11-03",
+      "sources": [
+        "bundle-19"
+      ],
+      "varieties_grades": [
+        [
+          "bette",
+          "local"
+        ],
+        [
+          "gorabalu",
+          "local"
+        ],
+        [
+          "gorabalu",
+          "medium"
+        ],
+        [
+          "new variety",
+          "local"
+        ],
+        [
+          "other",
+          "local"
+        ],
+        [
+          "rashi",
+          "local"
+        ],
+        [
+          "saraku",
+          "local"
+        ],
+        [
+          "saraku",
+          "medium"
+        ],
+        [
+          "sippegotu",
+          "local"
+        ]
+      ]
+    },
+    {
+      "crop_id": "arecanut",
+      "market_id": "5",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "copra",
+      "market_id": "1",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "copra",
+      "market_id": "2",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "copra",
+      "market_id": "3",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "copra",
+      "market_id": "4",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "copra",
+      "market_id": "5",
+      "count": 299,
+      "status": "available",
+      "start": "2025-11-01",
+      "end": "2026-11-03",
+      "sources": [
+        "bundle-18"
+      ],
+      "varieties_grades": [
+        [
+          "copra",
+          "local"
+        ],
+        [
+          "other",
+          "local"
+        ]
+      ]
+    },
+    {
+      "crop_id": "onion",
+      "market_id": "1",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "onion",
+      "market_id": "2",
+      "count": 162,
+      "status": "available",
+      "start": "2026-06-01",
+      "end": "2026-11-04",
+      "sources": [
+        "bundle-20"
+      ],
+      "varieties_grades": [
+        [
+          "local",
+          "local"
+        ],
+        [
+          "puna",
+          "local"
+        ]
+      ]
+    },
+    {
+      "crop_id": "onion",
+      "market_id": "3",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "onion",
+      "market_id": "4",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "onion",
+      "market_id": "5",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "potato",
+      "market_id": "1",
+      "count": 352,
+      "status": "available",
+      "start": "2026-04-01",
+      "end": "2026-11-04",
+      "sources": [
+        "bundle-21"
+      ],
+      "varieties_grades": [
+        [
+          "local",
+          "medium"
+        ],
+        [
+          "potato",
+          "medium"
+        ]
+      ]
+    },
+    {
+      "crop_id": "potato",
+      "market_id": "2",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "potato",
+      "market_id": "3",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "potato",
+      "market_id": "4",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    },
+    {
+      "crop_id": "potato",
+      "market_id": "5",
+      "count": 0,
+      "status": "unavailable",
+      "start": null,
+      "end": null,
+      "sources": [],
+      "varieties_grades": []
+    }
+  ]
+}

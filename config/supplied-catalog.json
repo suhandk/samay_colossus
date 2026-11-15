@@ -1,0 +1,78 @@
+{
+  "crops": [
+    {
+      "source_name": "Arecanut",
+      "id": "arecanut",
+      "names": {
+        "en": "Arecanut",
+        "kn": "ಅಡಿಕೆ"
+      }
+    },
+    {
+      "source_name": "Copra",
+      "id": "copra",
+      "names": {
+        "en": "Copra",
+        "kn": "ಕೊಬ್ಬರಿ"
+      }
+    },
+    {
+      "source_name": "Onion",
+      "id": "onion",
+      "names": {
+        "en": "Onion",
+        "kn": "ಈರುಳ್ಳಿ"
+      }
+    },
+    {
+      "source_name": "Potato",
+      "id": "potato",
+      "names": {
+        "en": "Potato",
+        "kn": "ಆಲೂಗಡ್ಡೆ"
+      }
+    }
+  ],
+  "markets": [
+    {
+      "source_name": "Bengaluru APMC",
+      "id": "1",
+      "names": {
+        "en": "Bengaluru APMC",
+        "kn": "ಬೆಂಗಳೂರು ಎಪಿಎಂಸಿ"
+      }
+    },
+    {
+      "source_name": "Hubballi APMC",
+      "id": "2",
+      "names": {
+        "en": "Hubballi APMC",
+        "kn": "ಹುಬ್ಬಳ್ಳಿ ಎಪಿಎಂಸಿ"
+      }
+    },
+    {
+      "source_name": "Kolar APMC",
+      "id": "3",
+      "names": {
+        "en": "Kolar APMC",
+        "kn": "ಕೋಲಾರ ಎಪಿಎಂಸಿ"
+      }
+    },
+    {
+      "source_name": "Shivamogga Mandi",
+      "id": "4",
+      "names": {
+        "en": "Shivamogga Mandi",
+        "kn": "ಶಿವಮೊಗ್ಗ ಮಂಡಿ"
+      }
+    },
+    {
+      "source_name": "Tiptur APMC",
+      "id": "5",
+      "names": {
+        "en": "Tiptur APMC",
+        "kn": "ತಿಪಟೂರು ಎಪಿಎಂಸಿ"
+      }
+    }
+  ]
+}

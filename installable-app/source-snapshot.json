@@ -1,0 +1,8 @@
+{
+  "source": "https://samay-colossus.vercel.app",
+  "assets_sha256": {
+    "/assets/index-C67lrKsn.js": "97a9756cac9e733421c1d3275b28cb51c57afb4e7665ea7958e4558604a1b618",
+    "/assets/index-wGpvniUS.css": "ba83f44637a00c5dab45fb8a4e88f5ce38eb944235b96c97a03a83c2cfc817fa"
+  },
+  "purpose": "Preserve the user-requested deployed frontend. Existing backend is proxied, not replaced."
+}
